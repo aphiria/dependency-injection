@@ -10,9 +10,12 @@
 
 declare(strict_types=1);
 
-namespace PHPSTORM_META;
+namespace Aphiria\DependencyInjection\Tests\Binders\Inspection\Mocks;
 
-use Aphiria\DependencyInjection\IServiceResolver;
-
-// Make the service resolver return the same type as the input parameter
-override(IServiceResolver::resolve(), type(0));
+/**
+ * Defines a fake concrete class for use in testing
+ */
+final class Foo implements IFoo
+{
+    // Don't do anything
+}
